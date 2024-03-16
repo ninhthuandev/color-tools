@@ -20,11 +20,6 @@ document.addEventListener('alpine:init', () => {
         }
     });
 
-    const themeValue = localStorage.getItem('theme');
-    if (themeValue) {
-        Alpine.store('theme').setTheme(themeValue);
-    }
-
     document.addEventListener('DOMContentLoaded', function () {
         Coloris({
             parent: null,
